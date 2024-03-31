@@ -22,8 +22,8 @@ import Route from '@ioc:Adonis/Core/Route'
 
 Route.group(() => {
   Route.get('orders', 'Controllers/OrderController.index')
-  Route.get('orders/{id}', 'Controllers/OrderController.show')
+  Route.get('orders/:id', 'Controllers/OrderController.show')
   Route.post('orders', 'Controllers/OrderController.store')
-  Route.post('orders/{id}', 'Controllers/OrderController.update')
-  Route.delete('orders/{id}', 'Controllers/OrderController.delete')
+  Route.post('orders/:id', 'Controllers/OrderController.update')
+  Route.delete('orders/:id', 'Controllers/OrderController.delete')
 }).prefix('api')
