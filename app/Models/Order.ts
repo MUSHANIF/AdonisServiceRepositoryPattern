@@ -6,13 +6,12 @@ export default class Order extends BaseModel {
   public id: number
 
   @column()
-  public details: string
+  public title: string
 
   @column()
-  public client: string
+  public description: string
 
-  @column()
-  public isFulfilled: string
+
 
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime
